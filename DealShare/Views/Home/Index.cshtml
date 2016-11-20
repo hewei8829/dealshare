@@ -68,26 +68,37 @@
         </div>
     </div>
     <div class="col-md-12">
-        <div class="profile-content">
-            <div class="jumbotron">
-                <div ng-app="ShowItems">
-                    <div class="row" ng-controller="AppController">
-                        <ul style="list-style-type:none;">
-                            <li ng-repeat="item in items.itemList">
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="thumbnail">
-                                        <a href="https://www.bing.com/"><img src="{{item.ImageUrl}}" alt="Test"></a>
-                                        <div class="caption">
-                                            <h3 style="text-align:center">{{item.ShortName}}</h3>
-                                            <p style="text-align:center">{{item.Description}}</p>
-                                            @*<p><a href="#" class="btn btn-primary" role="button">Button</a>
-                                                <a href="#" class="btn btn-default" role="button">Button</a></p>*@
+        <div class="jumbotron" style="padding-left:0; margin:0">
+            <div ng-app="ShowItems">
+                <div class="row" ng-controller="AppController">
+                    <ul style="list-style-type:none;">
+                        <li ng-repeat="item in items.itemList">
+                            <div class="col-md-3">
+                                <div class="thumbnail" style="padding:0; margin:0; border:0">
+
+                                    <a href="https://www.bing.com/"><img src="{{item.ImageUrl}}" alt="Test"></a>
+                                    <div class="caption">
+                                        <h3 style="text-align:center">{{item.ShortName}}</h3>
+                                        <p style="text-align:center">{{item.Description}}</p>
+                                        @*<p><a href="#" class="btn btn-primary" role="button">Button</a>
+                                            <a href="#" class="btn btn-default" role="button">Button</a></p>*@
+                                    </div>
+                                    <div class="modal-footer" style="text-align: left">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4"><b>200</b><br /><small>Price</small></div>
+                                            <div class="col-md-4"><b>50</b><br /><small>Discount</small></div>
+                                            <div class="col-md-4"><b>10</b><br /><small>Rating</small></div>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
