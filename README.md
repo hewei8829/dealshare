@@ -7,3 +7,6 @@ Asp.net web api. Azure storage & SQL
 
 ## Host
 Azure app service
+
+## Endpoint
+http://vandealshare.azurewebsites.net/
