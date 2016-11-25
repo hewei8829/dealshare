@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - VanDeal</title>
     <link rel="stylesheet" href="~/Content/bootstrap.css" />
-    <link rel="stylesheet" href="~/Content/customed.css"/>
+    <link rel="stylesheet" href="~/Content/sidebar.css"/>
+    <link rel="stylesheet" href="~/Content/font-awesome.css"/>
     <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/FrontEndScript/sidebar.js"></script>
     <script src="~/Scripts/AngularControllers/AngularCotroller.js"></script>
     <script src="~/Scripts/AngularServices/ApiCallService.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,9 +30,11 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
+    </div>*@
+    @RenderBody()
+
+
+    @*<div class="container body-content">
+    </div>*@
 </body>
 </html>
