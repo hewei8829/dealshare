@@ -80,12 +80,12 @@
         <div class="col-md-12 col-xs-12">
             <div class="jumbotron" style="padding-left:0; margin:0;background-color:white">
                 <div ng-app="ShowItems">
-                    <div class="row" ng-controller="AppController">
+                    <div class="row" ng-controller="ItemsController">
                         <ul style="list-style-type:none;">
                             <li ng-repeat="item in items.itemList">
                                 <div class="col-md-2 col-xs-4">
                                     <div class="thumbnail" style="padding:0; margin:0; border:0;">
-                                        <a href="https://www.bing.com/"><img class="resize" src="{{item.ImageUrl}}"></a>
+                                       <a href="https://www.bing.com/"><img class="resize" src="{{item.ImageUrl}}"></a>
                                         <div class="caption">
                                             <h3 style="text-align:left; font-size:12px;">{{item.ShortName}}</h3>
                                             <p style="text-align:left; font-size:10px">{{item.Description}}</p>

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
 using DealShareService.Contract;
-using System.Web.Http.Cors;
+
 
 namespace DealItemsService.Controllers
 {
@@ -104,12 +103,12 @@ namespace DealItemsService.Controllers
             return items;
         }
 
-        // POST api/values
-        [SwaggerOperation("Create")]
-        [SwaggerResponse(HttpStatusCode.Created)]
-        public void Post([FromBody]string value)
-        {
-        }
+        //// POST api/values
+        //[SwaggerOperation("Create")]
+        //[SwaggerResponse(HttpStatusCode.Created)]
+        //public void Post([FromBody]string value)
+        //{
+        //}
 
         // PUT api/values/5
         [SwaggerOperation("Update")]
@@ -126,5 +125,13 @@ namespace DealItemsService.Controllers
         public void Delete(int id)
         {
         }
+
+        //TODO: this need to support multipart/form-data
+        [HttpPost]
+        public HttpResponseMessage Post()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
     }
 }
