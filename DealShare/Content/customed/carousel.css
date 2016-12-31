@@ -1,0 +1,35 @@
+﻿
+
+.col-img-responsive span{
+        margin-top: 5px;
+	color:#fff;
+}
+.col-img-responsive {
+	
+	display:none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.col-img-responsive .price
+{
+    /*width: 50%;*/
+    float: left;
+    color:lightcyan
+}
+
+.col-img-responsive .itemName
+{
+    /*width: 50%;*/
+    float: left;
+    color:#fff;
+}
+
+.col-img-responsive .itemDescription
+{
+    /*width: 50%;*/
+    float: left;
+    color:#fff;
+}
