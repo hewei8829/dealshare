@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/Content/bootstrap.css" />
     <link rel="stylesheet" href="~/Content/font-awesome.css" />
     <link rel="stylesheet" href="~/Content/customed/carousel.css" />
+    <link rel="stylesheet" href="~/Content/customed/navbar.css" />
 
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
@@ -52,6 +53,7 @@
                 $(this).find(".col-img-responsive").hide();
             });
         });
+
     </script>
 
 </head>
@@ -77,297 +79,83 @@
         </div>*@
 
 
-    <div style="background-color:whitesmoke">
+    <div style="background-color:white">
         <div id="headContent">
-            <div class="container">
+            <div class="container" style="padding:0px">
                 <div class="row">
-                    <div class="col-md-2" style="background-color:blue">
-                        <div style="padding:50px 50px 50px 50px;background-color:gray">Hello</div>
+                    <div class="col-md-2">
+                        <img style="border:inherit;padding:0px" src="~/Image/VanDiscount.png" class="pull-left img-thumbnail">
                     </div>
-                    <div class="col-md-8" style="background-color:red">
-                        <div style="padding:50px 50px 50px 50px;background-color:lightgray">Hello</div>
+                    <div class="col-md-8">
+                        <div background-color:lightgray">
+                            <form class="navbar-form navbar-left" style="padding-top:20px;" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search Deals">
+                                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-md-2" style="background-color:yellow">
-                        <div style="padding:50px 50px 50px 50px;background-color:lightgreen">Hello</div>
+                    <div class="col-md-2">
+                        <div style="padding-top:10px">
+                            <button type="button" style="background-color:lightpink; " class="btn">联系我们</button>
+                            <i class="fa fa-phone" aria-hidden="true">(000)-000-000</i>
+                            <i class="fa fa-envelope-o" aria-hidden="true"> myemail@vandeal.com</i>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div>
-                <div style="background-color:deeppink; padding:10px 0 10px 0">
-                    <div class="container">
-                        <div>
-                            <button>buttion1</button>
-                            <button>buttion1</button>
-                            <button>buttion1</button>
-                        </div>
-                    </div>
-                </div>
-                <div style="background-color:lightgray; padding:10px 0 10px 0">
-                    <div class="container">
-                        <div>
-                            <button>buttion1</button>
-                            <button>buttion1</button>
-                            <button>buttion1</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="bodyContent" class="container" style="margin-top:20px;background-color:white">
-            <div class="row">
-                <div class="col-md-9 col-xs-12">
-                    <div id="carousel_header" class="row">
-                        <div class="col-md-9">
-                            <h3 style="color:black; font-weight:bolder; padding:0px 5px 0px 0px; margin:0px;">
-                                热门折扣
-                            </h3>
-                        </div>
-                        <div class="col-md-3">
-                            <div style="padding:5px 0px 5px 0px;">
-                                <button style="float:right; background-color:lightblue; border-color:lightblue;" type="button" class="btn btn-info">全部</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="myCarousel" class="carousel fdi-Carousel slide">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                            <li data-target="#myCarousel" data-slide-to="5"></li>
-                        </ol>
-                        <!-- Carousel items -->
-                        <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-md-3">
-                                        <div class="col-img-responsive">
-                                            <div class="price">$12.99</div>
-                                            <br />
-                                            <div class="itemName">Item1</div>
-                                            <br />
-                                            <div class="itemDescription">Description</div>
-                                        </div>
-                                        <img src="~/Image/carouselPlaceHold.jpg" class="img-responsive" alt="a" />
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3">
-                                        <div class="col-img-responsive">
-                                            <div class="price">$12.99</div>
-                                            <br />
-                                            <div class="itemName">Item2</div>
-                                            <br />
-                                            <div class="itemDescription">Description</div>
-                                        </div>
-                                        <img src="~/Image/carouselPlaceHold2.jpg" class="img-responsive" alt="a" />
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3">
-                                        <div class="col-img-responsive">
-                                            <div class="price">$12.99</div>
-                                            <br />
-                                            <div class="itemName">Item3</div>
-                                            <br />
-                                            <div class="itemDescription">Description</div>
-                                        </div>
-                                        <img src="~/Image/carouselPlaceHold.jpg" class="img-responsive" alt="a" />
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3">
-                                        <div class="col-img-responsive">
-                                            <div class="price">$12.99</div>
-                                            <br />
-                                            <div class="itemName">Item4</div>
-                                            <br />
-                                            <div class="itemDescription">Description</div>
-                                        </div>
-                                        <img src="~/Image/carouselPlaceHold2.jpg" class="img-responsive" alt="a" />
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3">
-                                        <div class="col-img-responsive">
-                                            <div class="price">$12.99</div>
-                                            <br />
-                                            <div class="itemName">Item5</div>
-                                            <br />
-                                            <div class="itemDescription">Description</div>
-                                        </div>
-                                        <img src="~/Image/carouselPlaceHold.jpg" class="img-responsive" alt="a" />
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3">
-                                        <div class="col-img-responsive">
-                                            <div class="price">$12.99</div>
-                                            <br />
-                                            <div class="itemName">Item6</div>
-                                            <br />
-                                            <div class="itemDescription">Description</div>
-                                        </div>
-                                        <img src="~/Image/carouselPlaceHold2.jpg" class="img-responsive" alt="a" />
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/carousel-inner-->
-                        </div>
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        </a>
-
-                    </div>
-                    <div id="deal_contents" style="margin-top:10px;">
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#topDeals" data-toggle="tab">
-                                    置顶折扣
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#latestDeals" data-toggle="tab">
-                                    最新折扣
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#latestDeals" data-toggle="tab">
-                                    各大商场折扣
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#latestDeals" data-toggle="tab">
-                                    吃货折扣
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="topDeals">
-                                <div class="col-md-12" style="border-bottom:1px solid lightGray; padding-bottom:5px">
-                                    <div class="col-md-3">
-                                        <div style="text-align:center; padding-top:20px">
-                                            <img src="~/Image/placeHold.jpg" style="padding-bottom:10px; padding-right:0px; border:0px; margin:0px;" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
-                                            <button type="button" class="btn btn-danger">立即购买</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>$11.99 ($24.99, 52% off) 史低价！aden + anais Muslin 中号婴儿睡袋 </h3>
-
-                                        <article>
-                                            <ul>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                            </ul>
-                                        </article>
-                                        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">More Information</a>
-                                    </div>
-                                    <hr />
-                                </div>
-                                <div class="col-md-12" style="border-bottom:1px solid lightGray; padding-bottom:5px">
-                                    <div class="col-md-3">
-                                        <div style="text-align:center; padding-top:20px">
-                                            <img src="~/Image/placeHold.jpg" style="padding-bottom:10px; padding-right:0px; border:0px; margin:0px;" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
-                                            <button type="button" class="btn btn-danger">立即购买</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>$11.99 ($24.99, 52% off) 史低价！aden + anais Muslin 中号婴儿睡袋 </h3>
-
-
-                                        <article>
-                                            <ul>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                            </ul>
-                                        </article>
-                                        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">More Information</a>
-                                    </div>
-                                    <hr />
-                                </div>
-                                <div class="col-md-12" style="border-bottom:1px solid lightGray; padding-bottom:5px">
-                                    <div class="col-md-3">
-                                        <div style="text-align:center; padding-top:20px">
-                                            <img src="~/Image/placeHold.jpg" style="padding-bottom:10px; padding-right:0px; border:0px; margin:0px;" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
-                                            <button type="button" class="btn btn-danger">立即购买</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>$11.99 ($24.99, 52% off) 史低价！aden + anais Muslin 中号婴儿睡袋 </h3>
-
-
-                                        <article>
-                                            <ul>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                            </ul>
-                                        </article>
-                                        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">More Information</a>
-                                    </div>
-                                    <hr />
-                                </div>
-                                <div class="col-md-12" style="border-bottom:1px solid lightGray; padding-bottom:5px">
-                                    <div class="col-md-3">
-                                        <div style="text-align:center; padding-top:20px">
-                                            <img src="~/Image/placeHold.jpg" style="padding-bottom:10px; padding-right:0px; border:0px; margin:0px;" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
-                                            <button type="button" class="btn btn-danger">立即购买</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3>$11.99 ($24.99, 52% off) 史低价！aden + anais Muslin 中号婴儿睡袋 </h3>
-
-
-                                        <article>
-                                            <ul>
-                                                <li>Amazon.ca 现有 aden + anais Muslin 中号婴儿睡袋，现价$11.99(原价$24.99)。</li>
-                                                <li>订单满CDN$35加拿大境内免运费, 或Amazon Prime会员免费两日速递（免费30天试用）。</li>
-                                            </ul>
-                                        </article>
-                                        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">More Information</a>
-                                    </div>
-                                    <hr>
-                                </div>
-
-                            </div>
-                            <div class="tab-pane" id="latestDeals">
-                                <p>Others</p>
-
-                            </div>
-                        </div>
+                <div style="background-color:#da3764;">
+                    <div class="container" style="padding-left:0px">
+                        <div class="collapse navbar-collapse" style="padding-left:0px">
+                            <ul class="nav navbar-nav my-nav">
+                                <li>
+                                    <a href="#" style="font-weight:bolder; color:white"><i class="fa fa-home" aria-hidden="true"></i>首页</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="font-weight:bolder; color:white">论坛</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="font-weight:bolder; color:white">晒折扣</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
 
                     </div>
                 </div>
-
-
-                <div class="col-md-3 col-xs-12">
-                    <div>
-                        <img src="~/Image/adPlaceHold.jpg" width="250" height="250">
-                        <p>Here is side Bar</p>
+                <div  id="stay-at-top" style="background-color:lightgray;">
+                    <div class="container" style="padding-left:0px">
+                        <div class="collapse navbar-collapse" style="padding-left:0px">
+                            <ul style="padding:10px" class="nav navbar-nav">
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:2px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">每日折扣</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">商场折扣</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">母婴</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">护肤品</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">电子产品</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">营养保健品</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">家居</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:2px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">更多</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
                     </div>
-                    <div>
-                        <img src="~/Image/adPlaceHold.jpg" width="250" height="250">
-                        <p>Here is side Bar</p>
-                    </div>
-                    <div>
-                        <img src="~/Image/adPlaceHold.jpg" width="250" height="250">
-                        <p>Here is side Bar</p>
-                    </div>
-                    <div>
-                        <img src="~/Image/adPlaceHold.jpg" width="250" height="250">
-                        <p>Here is side Bar</p>
-                    </div>
-
 
                 </div>
             </div>
@@ -376,6 +164,17 @@
 
     @RenderBody()
 
+    <script type="text/javascript">
+        var elementPosition = $('#stay-at-top').offset();
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > elementPosition.top) {
+                $('#stay-at-top').addClass("fixed");
+            } else {
+                $('#stay-at-top').removeClass("fixed");
+            }
+        });
+    </script>
 
 </body>
 </html>
