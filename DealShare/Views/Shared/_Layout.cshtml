@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VanDeal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/Image/favicon-32x32.png" />
     <link rel="stylesheet" href="~/Content/bootstrap.css" />
     <link rel="stylesheet" href="~/Content/font-awesome.css" />
     <link rel="stylesheet" href="~/Content/customed/carousel.css" />
     <link rel="stylesheet" href="~/Content/customed/navbar.css" />
+
 
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
@@ -86,18 +88,47 @@
                     <div class="col-md-2">
                         <img style="border:inherit;padding:0px" src="~/Image/VanDiscount.png" class="pull-left img-thumbnail">
                     </div>
-                    <div class="col-md-8">
-                        <div background-color:lightgray">
+                    <div class="col-md-7">
+                        @*<div background-color:lightgray">
                             <form class="navbar-form navbar-left" style="padding-top:20px;" role="search">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Search Deals">
                                     <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                                 </div>
                             </form>
+                        </div>*@
+                        <div class="input-group" id="search-bar" style="width:60%; padding-top:20px; left:20%">
+                            <input type="text" class="form-control" placeholder="Search for Deals" />
+                            <div class="input-group-btn">
+                                <div class="btn-group" role="group">
+                                    @*<div class="dropdown dropdown-lg">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="filter">Filter by</label>
+                                                    <select class="form-control">
+                                                        <option value="0" selected>All Deals</option>
+                                                        <option value="1">Most popular</option>
+                                                        <option value="2">NearBy Location</option>
+                                                        <option value="3">Top rated</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contain">Contains the words</label>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                            </form>
+                                        </div>
+                                    </div>*@
+                                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div style="padding-top:10px">
+                    <div class="col-md-3">
+                        <div style="padding-top:5px">
                             <button type="button" style="background-color:lightpink; " class="btn">联系我们</button>
                             <i class="fa fa-phone" aria-hidden="true">(000)-000-000</i>
                             <i class="fa fa-envelope-o" aria-hidden="true"> myemail@vandeal.com</i>
