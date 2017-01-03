@@ -56,6 +56,7 @@
             });
         });
 
+
     </script>
 
 </head>
@@ -90,38 +91,38 @@
                     </div>
                     <div class="col-md-7">
                         @*<div background-color:lightgray">
-                            <form class="navbar-form navbar-left" style="padding-top:20px;" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search Deals">
-                                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                            </form>
-                        </div>*@
+                                <form class="navbar-form navbar-left" style="padding-top:20px;" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search Deals">
+                                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                    </div>
+                                </form>
+                            </div>*@
                         <div class="input-group" id="search-bar" style="width:60%; padding-top:20px; left:20%">
                             <input type="text" class="form-control" placeholder="Search for Deals" />
                             <div class="input-group-btn">
                                 <div class="btn-group" role="group">
                                     @*<div class="dropdown dropdown-lg">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
-                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                            <form class="form-horizontal" role="form">
-                                                <div class="form-group">
-                                                    <label for="filter">Filter by</label>
-                                                    <select class="form-control">
-                                                        <option value="0" selected>All Deals</option>
-                                                        <option value="1">Most popular</option>
-                                                        <option value="2">NearBy Location</option>
-                                                        <option value="3">Top rated</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="contain">Contains the words</label>
-                                                    <input class="form-control" type="text" />
-                                                </div>
-                                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                            </form>
-                                        </div>
-                                    </div>*@
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">
+                                                        <label for="filter">Filter by</label>
+                                                        <select class="form-control">
+                                                            <option value="0" selected>All Deals</option>
+                                                            <option value="1">Most popular</option>
+                                                            <option value="2">NearBy Location</option>
+                                                            <option value="3">Top rated</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="contain">Contains the words</label>
+                                                        <input class="form-control" type="text" />
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                </form>
+                                            </div>
+                                        </div>*@
                                     <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                                 </div>
                             </div>
@@ -156,21 +157,115 @@
 
                     </div>
                 </div>
-                <div  id="stay-at-top" style="background-color:lightgray;">
+                <div id="stay-at-top" style="background-color:lightgray;">
                     <div class="container" style="padding-left:0px">
                         <div class="collapse navbar-collapse" style="padding-left:0px">
-                            <ul style="padding:10px" class="nav navbar-nav">
-                                <li>
-                                    <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:2px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">每日折扣</a>
+                            <ul id="nav-head" style="padding:10px" class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropbtn" data-toggle="dropdown" role="button" aria-expanded="false" style="color:black; padding:0px 10px 0px 10px; border-left:2px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">每日折扣</a>
+                                    <ul class="dropdown-menu" style="padding-left:10px; padding-right:10px;" role="menu">
+                                        <li style="font-weight:bold">
+                                            超市折扣
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+
+                                            </span>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+                                            </span>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li>
+                                <li class="dropdown">
                                     <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">商场折扣</a>
+                                    <ul class="dropdown-menu" style="padding-left:10px; padding-right:10px;" role="menu">
+                                        <li style="font-weight:bold">
+                                            超市折扣
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+
+                                            </span>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+                                            </span>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li>
+                                <li class="dropdown">
                                     <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">母婴</a>
+                                    <ul class="dropdown-menu" style="padding-left:10px; padding-right:10px;" role="menu">
+                                        <li style="font-weight:bold">
+                                            超市折扣
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+
+                                            </span>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span style="float:left;">食物</span>
+                                                <span>饮料</span>
+                                            </span>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li>
+                                <li class="dropdown">
                                     <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">护肤品</a>
+                                    <ul class="dropdown-menu" style="padding-left:10px; padding-right:10px;" role="menu">
+                                        <li style="font-weight:bold">
+                                            超市折扣
+                                        </li>
+                                        <li>
+                                            食物
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            食物
+                                        </li>
+                                        <li>
+                                            食物
+                                        </li>
+
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:1px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">电子产品</a>
@@ -185,9 +280,8 @@
                                     <a href="#" style="color:black; padding:0px 10px 0px 10px; border-left:1px solid gray;border-right:2px solid gray; font-family:'Microsoft New Tai Lue'; font-weight:bold">更多</a>
                                 </li>
                             </ul>
-                        </div><!-- /.navbar-collapse -->
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -197,7 +291,7 @@
 
     <script type="text/javascript">
         var elementPosition = $('#stay-at-top').offset();
-
+        var header = "<li><a>首页</a></li>";
         $(window).scroll(function () {
             if ($(window).scrollTop() > elementPosition.top) {
                 $('#stay-at-top').addClass("fixed");
