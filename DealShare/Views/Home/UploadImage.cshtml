@@ -1,0 +1,17 @@
+﻿
+<div ng-app="ShowItems">
+    <div ng-controller="UploadImageController">
+        <div class="fileinput fileinput-new" data-provides="fileinput">
+
+            <div class="col-lg-6 col-sm-6 col-12">
+
+                <span class="btn btn-primary btn-file">
+                    Browse...<input type="file" multiple my-directory="getFiles(file)" ng-disabled="false" />
+                </span>
+
+                <input type="button" class="btn btn-default  btn-primary" ng-click="uploadFiles()" value="Upload"  />
+                {{log}}
+            </div>
+        </div>
+    </div>
+</div>

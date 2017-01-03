@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Swashbuckle.Swagger.Annotations;
 using DealShareService.Contract;
-using System.Web.Http.Cors;
+
 
 namespace DealItemsService.Controllers
 {
@@ -49,67 +48,67 @@ namespace DealItemsService.Controllers
             {
                 Id = Guid.NewGuid().ToString(),
                 ShortName = "TestItem2",
-                Description = "This is item two",
-                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test2.png")
+                Description = "This is item 2",
+                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test1.png")
 
             });
             items.itemList.Add(new Item()
             {
                 Id = Guid.NewGuid().ToString(),
                 ShortName = "TestItem3",
-                Description = "This is item three",
-                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test3.png")
-
-            });
-            items.itemList.Add(new Item()
-            {
-                Id = Guid.NewGuid().ToString(),
-                ShortName = "TestItem4",
-                Description = "This is item four",
-                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test4.png")
-
-            });
-            items.itemList.Add(new Item()
-            {
-                Id = Guid.NewGuid().ToString(),
-                ShortName = "TestItem5",
-                Description = "This is item five",
-                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test5.png")
-
-            });
-            items.itemList.Add(new Item()
-            {
-                Id = Guid.NewGuid().ToString(),
-                ShortName = "TestItem6",
-                Description = "This is item six",
-                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test.png")
-
-            });
-            items.itemList.Add(new Item()
-            {
-                Id = Guid.NewGuid().ToString(),
-                ShortName = "TestItem7",
-                Description = "This is item seven",
+                Description = "This is item 3",
                 ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test2.png")
 
             });
             items.itemList.Add(new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                ShortName = "TestItem8",
-                Description = "This is item eight",
+                ShortName = "TestItem4",
+                Description = "This is item 4",
                 ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test3.png")
+
+            });
+            items.itemList.Add(new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                ShortName = "TestItem5",
+                Description = "This is item 5",
+                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test4.png")
+
+            });
+            items.itemList.Add(new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                ShortName = "TestItem6",
+                Description = "This is item 6",
+                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test5.png")
+
+            });
+            items.itemList.Add(new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                ShortName = "TestItem7",
+                Description = "This is item 7",
+                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test6.png")
+
+            });
+            items.itemList.Add(new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                ShortName = "TestItem8",
+                Description = "This is item 8",
+                ImageUrl = new Uri("https://dealsharedev.blob.core.windows.net/image/test7.PNG")
 
             });
             return items;
         }
 
-        // POST api/values
-        [SwaggerOperation("Create")]
-        [SwaggerResponse(HttpStatusCode.Created)]
-        public void Post([FromBody]string value)
-        {
-        }
+        //// POST api/values
+        //[SwaggerOperation("Create")]
+        //[SwaggerResponse(HttpStatusCode.Created)]
+        //public void Post([FromBody]string value)
+        //{
+        //}
 
         // PUT api/values/5
         [SwaggerOperation("Update")]
@@ -126,5 +125,13 @@ namespace DealItemsService.Controllers
         public void Delete(int id)
         {
         }
+
+        //TODO: this need to support multipart/form-data
+        [HttpPost]
+        public HttpResponseMessage Post()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
     }
 }
